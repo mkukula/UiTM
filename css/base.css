@@ -1,0 +1,169 @@
+body 
+{
+  background-color: white;
+}
+#content 
+{
+  padding-bottom: 50px;
+}
+#header
+{
+  margin: 10px;
+  height: 70px;
+
+  text-align: center;
+}
+#logo 
+{
+  height: 100%;
+  float: left;
+}
+#title
+{
+  position:relative;
+  top: 8px;
+  font-size: 36px;
+  color: #124191;
+  font-family: 'Droid Sans', sans-serif;
+}
+h3 
+{
+  display: block;
+  font-size: 22px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: bold;
+  padding-top:24px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #ccc;
+  color: #124191;
+}
+#content
+{
+  width: 80%;
+  margin:auto auto;
+} 
+
+#nav
+{ 
+  width: 100%;
+  padding: 5px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: auto;
+  margin-right: auto;
+  border-top: dotted #ccc 1px;
+  border-bottom: dotted #ccc 1px;
+  color: #676767;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+ol
+{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 16px;
+  width: 450px;
+  height: 25px;
+  line-height: 200%;
+  display: inline-block;
+}
+
+ol > li
+{
+  float: left;
+  width: 150px;
+  height: 30px;
+  border-right: dotted #ccc 1px;
+}
+ol > li:first-child
+{
+  border-left: dotted #ccc 1px;
+}
+
+ol > li:hover
+{
+  cursor: pointer;
+  background-color: #ffffff;
+  border: solid #ccc 1px;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+  color: #124191 !important; 
+}
+
+.social {
+  width: 34px;
+  height: 22px;
+  font-size:18px;
+  float:left;
+  text-align: center;
+  margin-left:10px;
+}
+.fb
+{
+  margin-left: 10px;
+}
+.fb:hover
+{
+  background-color: #4668b3;
+}
+.yt:hover
+{
+  background-color: #d94348;
+}
+.tw:hover
+{
+  background-color: #3095d3;
+}
+.gplus:hover
+{
+  background-color: #d95333;
+}
+
+.footer
+{
+
+  clear:both; 
+  float: right;
+  height: 35px;
+  color: #333;
+  border-top: #cccccc 1px solid;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  z-index:1;
+  background-color: #f4f4f4;
+}
+.footer > span 
+{
+  margin-right: 10px;
+  float:right;
+}
+#foto
+{
+  margin: 10px;
+  width: 132px;
+  height: 260px;
+
+}
+.info
+{
+  padding:10px;
+  padding-left:20px; 
+  padding-right: 50px;
+  font-size: 16px;
+  color: #676767;
+}
+.skill {
+  font-size: 16px;
+}
