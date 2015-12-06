@@ -1,0 +1,26 @@
+<div ng-switch="currentView">
+	<div ng-switch-when="postListView">
+		<h3>Spis postów</h3>
+		<div ng-repeat="post in posts" class="list-group postListWrapper">
+			<a class="list-group-item">
+				<button ng-click="goToPost(post.id)">Czytaj post</button>
+				<h4 class="list-group-item-heading">{{post.title}}</h4>
+				<span>
+				<i class="demo-icon icon-user"></i>
+				{{users | get_author_name: post.userId}}
+				</span>
+			</a>
+		</div>
+	</div>
+
+	<div ng-switch-when="postView" class="panel panel-primary postWrapper " title={{currentPost.title}}>
+		<div class="panel-heading postTitle">
+			{{currentPost.title}}
+		</div>
+		<div class="panel-body">
+			{{currentPost.body}}
+			<br/><br/>
+			<span ng-click="listUserPosts(post.userId)"><i class="demo-icon icon-user"></i>{{users | get_author_name: currentPost.userId}}</span>
+		</div>					
+	</div>
+</div>

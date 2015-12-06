@@ -1,0 +1,41 @@
+<div ng-switch="currentView">
+	<div ng-switch-when="userListView">
+		<h3>Spis użytkowników</h3>
+		<div ng-repeat="user in users" class="userWrapper">
+			<div class="userTitle">
+				<span>{{user.name}}</span>
+			</div>	
+			<button ng-click="listUserPosts(user.id)">Czytaj posty</button>
+			<table>
+				<tr>
+					<td class="userTable">Strona internetowa:</td>    
+					<td><a href={{user.website}}>{{user.website}}</a></td>
+				</tr>
+				<tr>
+					<td class="userTable">E-mail:</td>    
+					<td>{{user.email}}</td>
+				</tr>
+				<tr>
+					<td class="userTable">Telefon:</td>    
+					<td>{{user.phone}}</td>
+				</tr>
+				<tr>
+					<td class="userTable">Praca:</td>    
+					<td>{{user.company.name}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div ng-switch-when="userPostsView" >
+			<h3>Posty użytkownika <i>{{users | get_author_name: userPosts[0].userId}}</i></h3>
+			<div ng-repeat="post in userPosts" class="panel panel-primary postWrapper">
+			<div class="panel-heading postTitle">
+				{{post.title}}
+			</div>
+			<div class="panel-body">
+				{{post.body}}
+			</div>
+		</div>
+	</div>
+</div>
